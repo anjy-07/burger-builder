@@ -4,7 +4,7 @@ import classes from './BurgerIngredient.module.css';
 const BurgerIngredient = (props) => {  
     let ingredients = null;
     switch(props.type){
-        case('Bread-Botton'):
+        case('Bread-Bottom'):
             ingredients = <div className={classes.BreadBottom}></div>;
             break;
         case('Bread-Top'):
@@ -15,25 +15,22 @@ const BurgerIngredient = (props) => {
             </div>
             );
             break;
-        case('Meat'):
-            ingredients = <div className={classes.BreadBottom}></div>;
+        case('meat'):
+            ingredients = <div className={classes.Meat}></div>;
             break;
-        case('Cheese'):
+        case('cheese'):
             ingredients = <div className={classes.Cheese}></div>;
             break;
-        case('Salad'):
+        case('salad'):
             ingredients = <div className={classes.Salad}></div>;
             break;
-        case('Bacon'):
+        case('bacon'):
             ingredients = <div className={classes.Bacon}></div>;
             break;
         default:
             ingredients=null;
         
     }
-
-    console.log("Ingredients", ingredients);
-
     return ingredients;
    
 }
