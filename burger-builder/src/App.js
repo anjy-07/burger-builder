@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Layout from './components/Layout/Layout';
 import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
-class App extends Component{
+
+export default class App extends Component{
   render(){
     return(
       <div>
@@ -13,5 +14,3 @@ class App extends Component{
     )
   }
 }
-
-export default App;
