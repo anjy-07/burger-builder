@@ -8,8 +8,6 @@ const SideDrawer = (props) => {
     let attachedClasses=[classes.SideDrawer, classes.Close];
     if(props.show)
          attachedClasses=[classes.SideDrawer, classes.Open];
-
-    console.log(attachedClasses)
     return (
         <Aux>
             <Backdrop show={props.show} clicked={props.closed}></Backdrop>
